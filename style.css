@@ -82,3 +82,12 @@
     border-radius: 15px;
     color: white;
 }
+
+#restart{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-family:'Times New Roman', Times, serif
+}

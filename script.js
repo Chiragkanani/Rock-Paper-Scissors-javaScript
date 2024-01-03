@@ -10,6 +10,7 @@ let scissors = document.querySelector("#scissors");
 let final = document.querySelector("#final");
 let you = document.querySelector("#you");
 let comp = document.querySelector("#comp");
+let restart = document.querySelector("#restart");
 
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
@@ -80,3 +81,11 @@ scissors.addEventListener("click",(e)=>{
    playGame(userChoice)
 })
 
+restart.addEventListener("click",()=>{
+    youScore=0;
+    compScore=0;
+    you.innerText = youScore;
+    comp.innerText = compScore;
+    final.innerText = "Pick Your Move";
+    final.setAttribute("class", "draw");
+})
